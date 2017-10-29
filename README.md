@@ -1,27 +1,36 @@
 # read-and-show-values-from-form
-Escribe un programa PHP que permita al usuario rellenar un formulario de registro con los datos de nombre, contraseña, fecha de nacimiento, tienda, edad y suscripción. El programa recibe los datos del formulario y los muestra en pantalla tal y como los escribió el usuario.
+*Escribe un programa PHP que permita al usuario rellenar un formulario de registro con los datos de nombre, contraseña, fecha de nacimiento, tienda, edad y suscripción. El programa recibe los datos del formulario y los muestra en pantalla tal y como los escribió el usuario.*
 
-* Escribir PHP incrustado en HTML
+Rama: "read-and-show-values-from-form-basic"
 
-* Configuración de un formulario HTML para comunicar parámetros a un programa PHP
+Orientaciones:
 
-* Acceso a parámetros de un formulario desde un programa PHP ($_GET, $_POST y $_REQUEST)
+1. Procedimiento de paso de parámetros entre formulario y script PHP
 
-* Generación de páginas dinámicas con PHP
+2. Creación de una página web con PHP incrustado
 
-* Uso de la función PHP header
+*Implementa el mismo programa con las siguientes mejoras:*
 
-* Uso de funciones de saneamiento y validación filter_input
-
-Implementa las versiones mejoradas propuestas en distintas ramas del repositorio
-
-* Implementa el programa con mejoras para que no se pueda acceder directamente al script si no es por medio del formulario
-
-* Mejora el script para que no acceda a datos no establecidos en el formulario
+Rama: "read-and-show-values-from-form-valid" 
 
 * Mejora el script para que se compruebe la validez de los datos introducidos por el usuario en el formulario
 
-* Implementa el script utilizando las distintas variables superglobales $_GET y $_POST.
+    * Todos los campos son obligatorios
+    * El nombre contiene letras mayúsculas y minúsculas y espacios y tiene una longitud entre 3 y 25 caracteres
+    * La contraseña contiene caracteres alfanuméricos y tiene una longitud entre 6 y 8 caracteres
+    * El correo electrónico debe tener el formato correcto
+    * Debe ser mayor de edad
 
-* Implementa el programa con un único fichero que integre la creación del formulario con la creación de la página dinámica con los datos introducidos
+* Si se intenta activar el script "procesaformulario" sin pasar por el formulario el script reenvía el formulario para que se rellene.
+
+Orientaciones:
+
+1. Uso de la función PHP header
+
+2. Uso de funciones de saneamiento y validación filter_input y filter_var
+
+*Implementa el programa anterior con un único fichero que integre la creación del formulario con la creación de la página dinámica con los datos introducidos*
+
+Rama: "read-and-show-values-from-form-one-file" 
+
 
